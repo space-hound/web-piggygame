@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- CSS REFERENCE -->
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<!-- JS REFERENCE -->
+<script src="js/sQ.js"></script>
+<script src="./js/pig.js"></script>
+    
+	<title> Pigster Trickster </title>
+</head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <div class="outer-logo-pic">
+                        <div class="inner-logo-pic">
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <h1><a href="#">Piggy Game!</a></h1>
+                    </div>
+                </div>
+                
+                <div class="menu">
+                    
+                </div>
+            </div>
+            
+            <div class="content">
+               <!--########### APP ###########-->
+                <div class="play-zone">
+                   <!--########### PLAYER 1 ###########-->
+                    <div class="player player-1">
+                        <div class="info">
+                            <div class="name">
+                                Player 1
+                            </div>
+                            
+                            <div class="current-score">
+                                0
+                            </div>
+                            
+                            <div class="total-score">
+                                0
+                            </div>
+                        </div>
+                    
+                        <div class="cpanel">
+                            <button class="roll">
+                                <i class="fa fa-refresh"></i>
+                                <span> Roll </span>
+                            </button>
+                            <button class="hold">
+                                <i class="fa fa-times"></i>
+                                <span> Hold </span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--########### PLAYER 2 ###########-->
+                    <div class="player player-2">
+                        <div class="info">
+                            <div class="name">
+                                <span> Player 2</span>
+                            </div>
+                            
+                            <div class="current-score">
+                                <span> 0 </span>    
+                            </div>
+                            
+                            <div class="total-score">
+                                <span> 0 </span>
+                            </div>
+                        </div>
+                        
+                        <div class="cpanel">
+                            <button class="roll">
+                                <i class="fa fa-refresh"></i>
+                                <span> Roll </span>
+                            </button>
+                            <button class="hold">
+                                <i class="fa fa-times"></i>
+                                <span> Hold </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="dices">
+                    <div class="dice-1"></div>
+                    <div class="dice-2"></div>
+                </div>
+                
+                <div class="end-game">
+                    <p></p>    
+                </div>
+                
+                <!--########### ENDAPP ###########-->
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+.logo{
+    display: inline-block;    
+    padding: 10px;
+}
+
+.logo .outer-logo-pic{
+    position: relative;
+    
+    width: 75px;
+    height: 50px;
+    
+    border-radius: 50%;
+    border: solid 2px #000;
+    background-color: rgb(216,27,96);
+}
+
+.logo .outer-logo-pic .inner-logo-pic{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 90%;
+    height: 90%;
+    
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: rgb(236,64,122);
+}
+
+.logo .outer-logo-pic .inner-logo-pic::after, 
+.logo .outer-logo-pic .inner-logo-pic::before{
+    content: '';
+    
+    display: block;
+    position: absolute;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 12px;
+    height: 12px;
+    
+    border-radius: 50%;
+    border: solid 2px #000;
+    background-color: rgb(216,27,96);
+}
+
+.logo .outer-logo-pic .inner-logo-pic::after{
+    left: 18%;
+}
+
+.logo .outer-logo-pic .inner-logo-pic::before{
+    right: 18%;
+}
+
+.logo .logo-text h1{
+    padding-bottom: 10px;
+}
+
+.logo .logo-text h1 a{
+    display: inline-block;
+    line-height: 10px;
+    font-family: 'Cute Font', cursive;
+    font-weight: 400;
+    font-size: 56px;
+    color: rgb(236,64,122);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

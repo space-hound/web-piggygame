@@ -1,0 +1,113 @@
+.play-zone{
+    display: flex;
+    position: relative;
+    width: 60%;
+    margin: 60px auto;
+}
+.play-zone .player{    
+    width: 50%;
+    padding: 30px;
+    border-radius: 8px;
+}
+.player .info{
+    width: 100%;
+    font-family: 'BioRhyme Expanded', serif;
+    text-align: center;
+}
+.player .info .name{
+    font-size: 2.8em;
+    margin-bottom: 60px;
+}
+.player .info .current-score{
+    font-size: 2.4em;
+    margin-bottom: 40px;
+}
+.player .info .total-score{
+    font-size: 1.8em;
+    font-weight: 800;
+}
+.player .cpanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 200px;
+    padding: 30px;
+}
+.player .cpanel button{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    padding: 10px;
+    margin: 30px;
+}
+.player .cpanel button i{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.player .cpanel button span{
+    font-size: 2em;
+}
+
+
+/************** CURENT PLAYER **************/
+.current-player{
+    background-color: var(--black);
+}
+
+.current-player .info{
+    color: var(--white);
+}
+
+.current-player button{
+    color: var(--white);
+}
+
+/************** DICES **************/
+
+#dices{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+    background-color: transparent;
+}
+
+#dices .dice-1{
+    margin-bottom: 20px;
+}
+
+.d-none{
+    display: none;
+}
+
+.end-game{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40%;
+    height: 300px;
+    
+    background-color: var(--white);
+    border-radius: 12px;
+    border: solid 3px var(--red);
+}
+
+.end-game p{
+    text-align: center;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 3em;
+    color: var(--blue);
+}

@@ -1,0 +1,135 @@
+:root{
+    --dice-size: 80px;
+    --dot-size: 14px;
+}
+
+.dice{
+    display: inline-block;
+    position: relative;
+    
+    padding: 6px;
+    
+    width: var(--dice-size);
+    height: var(--dice-size);
+    
+    background-color: rgba(240, 240, 240);
+    
+    border-radius: 16px;
+    border: solid 3px rgba(33, 33, 33);
+}
+
+.dice div{
+    display: inline-block;
+    position: absolute;
+    
+    width: var(--dot-size);
+    height: var(--dot-size);
+    
+    background-color: rgba(77, 77, 77);
+    
+    border-radius: 150%;
+    border: solid 1px rgba(33, 33, 33);
+}
+/*****************************************************
+***********     ONE
+*****************************************************/
+.dice.one div:nth-of-type(1){
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*****************************************************
+***********     TWO
+*****************************************************/
+.dice.two div:nth-of-type(1){
+    top: 13%; left: 13%;
+    transform: translate(13%, 13%);
+}
+.dice.two div:nth-of-type(2){
+    bottom: 13%; right: 13%;
+    transform: translate(-13%, -13%);
+}
+/*****************************************************
+***********     THREE
+*****************************************************/
+.dice.three div:nth-of-type(1){
+    top: 10%; left: 10%;
+    transform: translate(10%, 10%);
+}
+.dice.three div:nth-of-type(2){
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dice.three div:nth-of-type(3){
+    bottom: 10%; right: 10%;
+    transform: translate(-10%, -10%);
+}
+/*****************************************************
+***********     FOUR
+*****************************************************/
+.dice.four div:nth-of-type(1){
+    top: 15%; left: 15%;
+    transform: translate(15%, 15%);
+}
+.dice.four div:nth-of-type(2){
+    top: 15%; right: 15%;
+    transform: translate(-15%, 15%);
+}
+.dice.four div:nth-of-type(3){
+    bottom: 15%; left: 15%;
+    transform: translate(15%, -15%);
+}
+.dice.four div:nth-of-type(4){
+    bottom: 15%; right: 15%;
+    transform: translate(-15%, -15%);
+}
+/*****************************************************
+***********     FIVE
+*****************************************************/
+.dice.five div:nth-of-type(1){
+    top: 12%; left: 12%;
+    transform: translate(12%, 12%);
+}
+.dice.five div:nth-of-type(2){
+    top: 12%; right: 12%;
+    transform: translate(-12%, 12%);
+}
+.dice.five div:nth-of-type(3){
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dice.five div:nth-of-type(4){
+    bottom: 12%; left: 12%;
+    transform: translate(12%, -12%);
+}
+.dice.five div:nth-of-type(5){
+    bottom: 12%; right: 12%;
+    transform: translate(-12%, -12%);
+}
+/*****************************************************
+***********     SIX
+*****************************************************/
+.dice.six div:nth-of-type(1){
+    top: 10%; left: 14%;
+    transform: translate(10%, 14%);
+}
+.dice.six div:nth-of-type(2){
+    top: 50%; left: 14%;
+    transform: translate(14%, -50%);
+}
+.dice.six div:nth-of-type(3){
+    bottom: 10%; left: 14%;
+    transform: translate(10%, -14%);
+}
+
+.dice.six div:nth-of-type(4){
+    top: 10%; right: 14%;
+    transform: translate(-10%, 14%);
+}
+.dice.six div:nth-of-type(5){
+    top: 50%; right: 14%;
+    transform: translate(-14%, -50%);
+}
+.dice.six div:nth-of-type(6){
+    bottom: 10%; right: 14%;
+    transform: translate(-10%, -12%);
+}
