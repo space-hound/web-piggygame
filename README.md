@@ -18,5 +18,3 @@ a games of pigs and dices - i just wanna learn javascript and css - i am proud o
 ----
 
 </br>
-
-`Dec 2018`
